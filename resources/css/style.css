@@ -2,6 +2,35 @@
 html {
   font-size: 16px;
   font-family: Helvetica, sans-serif;
+  background-color: white;
+}
+
+/* a container with max-width of 960px */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* make a container a flex container */
+.flexcontainer {
+  display: flex;
+  align-items: center;
+}
+
+/* represents a section */
+.sectioncontainer {
+  padding-top: 2rem;
+  padding-left: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+/* represents the left column within a section */
+.sectionitemleft {
+}
+
+/* represents the right column within a section with maximum width of 40% */
+.sectionitemright {
+  width: 40%;
 }
 
 /* -- HEADER SECTION -- */
