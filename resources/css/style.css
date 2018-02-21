@@ -5,6 +5,24 @@ html {
   background-color: white;
 }
 
+h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  display: block;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  display: block;
+}
+
+h3 {
+  font-size: 1.17rem;
+  font-weight: 800;
+  display: block;
+}
+
 /* a container with max-width of 960px */
 .container {
   max-width: 960px;
@@ -22,6 +40,21 @@ html {
 .flex {
   display: flex;
   align-items: center;
+}
+
+.flexstart{
+  display: flex;
+  align-items: flex-start;
+}
+
+.flexwrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.justifycenter {
+  justify-content: center;
 }
 
 .justifyspacebetween {
@@ -51,20 +84,45 @@ html {
 /* represents a section */
 .sectioncontainer {
   max-width: 100%;
-  padding: 2rem 1.5rem;
   background-color: lightgray;
+}
+
+.sectioncontainer.highpadding {
+  padding: 2rem 1.5rem;
+}
+
+.sectioncontainer.lowpadding {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
 }
 
 /* represents the left column within a section */
 .sectionitemleft {
   overflow: hidden;
-  max-width: 60%;
+  /* max-width: 60%; */
 }
 
 /* represents the right column within a section with maximum width of 40% */
 .sectionitemright {
   margin-left: 1.5rem;
+  /* width: 40%; */
+}
+
+.width65 {
+  width: 65%;
+}
+.width60 {
+  width: 60%;
+}
+.width40 {
   width: 40%;
+}
+.width35 {
+  width: 35%;
+}
+.width30 {
+  width: 27.5%;
 }
 
 /* -- HEADER SECTION -- */
@@ -125,10 +183,7 @@ header .desktopmenu li {
   height: auto;
 }
 
-.sectionitemright h1 {
-  font-size: 2rem;
-  font-weight: 800;
-}
+
 
 .button {
   color: white;
@@ -141,7 +196,18 @@ header .desktopmenu li {
 
 /* -- INFO SECTION -- */
 
+.smallimage {
+  display: block;
+  width: 35%;
+  height: auto;
+}
+
+
+
 /* -- COURSES SECTION -- */
+.padding1 {
+  padding: 1rem 1rem;
+}
 
 /* -- THESIS SECTION -- */
 
