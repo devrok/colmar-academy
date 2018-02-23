@@ -26,7 +26,7 @@ h3 {
 
 /* a container with max-width of 960px */
 .container {
-  max-width: 960px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -54,7 +54,7 @@ h3 {
 
 .flexwrap {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 
@@ -80,6 +80,10 @@ h3 {
   color: #9B9B9B;
 }
 
+.backgroundwhite {
+  background-color: #FFFFFF;
+}
+
 .backgroundlighter {
   background-color: #D8D8D8;
 }
@@ -98,22 +102,34 @@ h3 {
   padding: 2rem 1.5rem;
 }
 
+.sectioncontainer.leftpadding {
+  padding-left: 1.5rem;
+}
+
 .sectioncontainer.lowpadding {
     padding-top: 1rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
 }
 
+.itemrightpadding {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
 /* represents the left column within a section */
 .sectionitemleft {
   overflow: hidden;
+  margin: 2rem 1.5rem;
+  /* padding-right: 1.5rem; */
   /* max-width: 60%; */
 }
 
 /* represents the right column within a section with maximum width of 40% */
 .sectionitemright {
-  margin-left: 1.5rem;
+  /* margin-left: 1.5rem; */
   /* width: 40%; */
+  background-color: lightseagreen;
 }
 
 .width65 {
@@ -123,13 +139,36 @@ h3 {
   max-width: 60%;
 }
 .width40 {
-  width: 40%;
+  min-width: 40%;
 }
 .width35 {
   width: 35%;
 }
 .width30 {
-  width: 27.5%;
+  width: 25%;
+}
+
+.textcontainersmall{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.textcontainersmall h3{
+
+}
+
+.textcontainersmall span{
+  line-height: 1.2rem;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.textcontainersmall a{
+  font-size: 0.75rem;
+  text-decoration: none;
+  margin-top: 0.5rem;
 }
 
 /* -- HEADER SECTION -- */
@@ -189,6 +228,7 @@ header .desktopmenu li {
 .sectionitemleft img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 .button {
