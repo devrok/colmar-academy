@@ -2,6 +2,7 @@
 html {
   font-size: 16px;
   font-family: Helvetica, sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
   background-color: white;
   color: #4A4A4A;
 }
@@ -133,7 +134,8 @@ h3 {
 .sectionitemright {
   /* margin-left: 1.5rem; */
   /* width: 40%; */
-  background-color: lightseagreen;
+  /* just to make area visible during development */
+  /* background-color: lightseagreen; */
 }
 
 .width65 {
@@ -155,13 +157,36 @@ h3 {
   height: 100%;
 }
 
+.textcontainer {
+  padding-right: 4.5rem;
+}
+
+.textcontainer h1 {
+  line-height: 2.5rem;
+}
+
+.textcontainer h3 {
+  margin-top: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.textcontainer a {
+  margin-top: 1.5rem;
+  color: white;
+  text-decoration: none;
+  background-color: #4A4A4A;
+  padding: 0.5rem 0;
+  text-align: center;
+  display: block;
+}
+
 .textcontainersmall h3 {
 
 }
 
 .textcontainersmall span {
   line-height: 1.2rem;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   margin-top: 0.5rem;
 }
 
@@ -248,6 +273,25 @@ header .desktopmenu li {
   height: auto;
 }
 
+.textcontainerinfo {
+
+}
+.textcontainerinfo h2 {
+  margin-top: 2rem;
+}
+
+.textcontainerinfo span {
+  display: block;
+  margin-top: 1.5rem;
+  line-height: 1.2rem;
+  font-size: 0.89rem;
+}
+
+.textcontainerinfo .smallfont {
+  font-size: 0.75rem;
+}
+
+
 /* -- COURSES SECTION -- */
 .specialmarginpadding {
   margin: 1rem 0;
@@ -270,10 +314,25 @@ header .desktopmenu li {
 
 
 /* -- THESIS SECTION -- */
+.containerthesispadding {
+  padding: 2rem 0;
+}
+
+.textcontainerthesis h3 {
+  margin-top: 1.5rem;
+}
+
+.textcontainerthesis span {
+  display: block;
+  margin-top: 0.5rem;
+  line-height: 1.2rem;
+  font-size: 0.89rem;
+}
 
 /* -- FOOTER SECTION -- */
 footer {
   height: 4rem;
+  border-top: 1px solid #E0E2E2;
 }
 
 footer span {
