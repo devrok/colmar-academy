@@ -26,7 +26,7 @@ h3 {
 
 /* a container with max-width of 960px */
 .container {
-  max-width: 1024px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -71,9 +71,9 @@ h3 {
 }
 
 /* class to make a text bold */
-.bold {
+/* .bold {
   font-weight: 700;
-}
+} */
 
 /* class used to make a black text a little bit more gray */
 .light {
@@ -117,6 +117,10 @@ h3 {
   padding-bottom: 2rem;
 }
 
+.itemrightpadding1 {
+  padding: 2rem 0;
+}
+
 /* represents the left column within a section */
 .sectionitemleft {
   overflow: hidden;
@@ -144,10 +148,6 @@ h3 {
 .width35 {
   width: 35%;
 }
-.width30 {
-  width: 25%;
-}
-
 .textcontainersmall{
   padding: 1rem;
   display: flex;
@@ -155,20 +155,21 @@ h3 {
   height: 100%;
 }
 
-.textcontainersmall h3{
+.textcontainersmall h3 {
 
 }
 
-.textcontainersmall span{
+.textcontainersmall span {
   line-height: 1.2rem;
   font-size: 0.75rem;
   margin-top: 0.5rem;
 }
 
-.textcontainersmall a{
+.textcontainersmall a {
   font-size: 0.75rem;
   text-decoration: none;
   margin-top: 0.5rem;
+  color: #5595E1;
 }
 
 /* -- HEADER SECTION -- */
@@ -248,9 +249,25 @@ header .desktopmenu li {
 }
 
 /* -- COURSES SECTION -- */
-.padding1 {
-  padding: 1rem 1rem;
+.specialmarginpadding {
+  margin: 1rem 0;
+  padding: 0 2rem;
 }
+
+.sectionitem {
+  width: 29%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.sectionitem img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 /* -- THESIS SECTION -- */
 
