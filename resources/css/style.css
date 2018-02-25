@@ -3,7 +3,7 @@ html {
   font-size: 16px;
   font-family: Helvetica, sans-serif;
   /* font-family: 'Roboto', sans-serif; */
-  background-color: lightblue;
+  /* background-color: lightblue; */
   color: #4A4A4A;
 }
 
@@ -29,13 +29,13 @@ h3 {
 .container {
   max-width: 960px;
   margin: 0 auto;
-  background-color: lightseagreen
+  /* background-color: lightseagreen */
 }
 
 @media only screen and (max-width: 540px) {
   .container {
     /* max-width: 100%; */
-    max-width: 540px;
+    width: 100%;
     margin: 0;
   }
 }
@@ -151,15 +151,26 @@ h3 {
 }
 
 .imagesmall {
-  display: block;
   width: 35%;
   height: auto;
 }
+
+.desktop.imagesmall {
+  display: block;
+}
+
+.mobile.imagesmall {
+  display: none;
+}
+
 @media only screen and (max-width: 540px) {
-  .imagesmall {
+  .desktop.imagesmall {
+    display: none;
+  }
+
+  .mobile.imagesmall {
     display: block;
     width: 100%;
-    height: auto;
   }
 }
 
@@ -169,8 +180,8 @@ h3 {
   display: flex;
   flex-direction: column;
   height: 100%;
-}
 
+}
 .textcontainersmall h3 {
 
 }
@@ -299,9 +310,6 @@ header .desktopmenu li {
   padding: 2rem 1.5rem;
 }
 
-.thesiscontainer {
-  padding: 2rem 0;
-}
 
 .sectionitemleft img {
   width: 100%;
@@ -346,6 +354,12 @@ header .desktopmenu li {
   padding-bottom: 2rem;
 }
 
+.infocontainer .sectionitemright .sectioncontainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
 @media only screen and (max-width: 540px) {
   .infocontainer .sectionitemleft {
     display: none;
@@ -360,10 +374,11 @@ header .desktopmenu li {
   }
 
   .infocontainer .width65 {
-    width: 100%;
+    width: auto;
   }
 
   .infocontainer .sectionitemright .sectioncontainer {
+    align-items: flex-start;
     flex-direction: column;
   }
 
@@ -372,7 +387,7 @@ header .desktopmenu li {
   }
 
   .infocontainer .textcontainersmall {
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
   }
 }
 
@@ -401,6 +416,17 @@ header .desktopmenu li {
 /* -- THESIS SECTION -- */
 .containerthesispadding {
   padding: 2rem 0;
+}
+
+.thesiscontainer {
+  padding: 2rem 0;
+}
+
+@media only screen and (max-width: 540px) {
+  .thesiscontainer .sectionitemright{
+    display: none;
+  }
+
 }
 
 .textcontainerthesis h3 {
