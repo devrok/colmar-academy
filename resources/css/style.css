@@ -55,12 +55,6 @@ h3 {
   align-items: flex-start;
 }
 
-.flexwrap {
-  display: flex;
-  align-items: stretch;
-  flex-wrap: wrap;
-}
-
 .justifycenter {
   justify-content: center;
 }
@@ -306,11 +300,6 @@ header .desktopmenu li {
 
 }
 
-.coursescontainer {
-  padding: 2rem 1.5rem;
-}
-
-
 .sectionitemleft img {
   width: 100%;
   height: auto;
@@ -360,13 +349,18 @@ header .desktopmenu li {
   flex-direction: row;
 }
 
+.infocontainer .sectionitemright .sectioncontainer:last-child {
+  background-color: #D8D8D8;
+}
+
 @media only screen and (max-width: 540px) {
   .infocontainer .sectionitemleft {
     display: none;
   }
 
   .infocontainer .sectionitemright {
-    padding 0 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .infocontainer .width40 {
@@ -383,11 +377,19 @@ header .desktopmenu li {
   }
 
   .infocontainer .lowpadding {
-    padding: 1rem 1rem 4rem 1rem;
+    padding: 1rem 1rem 2rem 1rem;
   }
 
   .infocontainer .textcontainersmall {
     padding: 1rem 1rem;
+  }
+
+  .infocontainer .sectionitemright .sectioncontainer:last-child {
+    background-color: #FFFFFF;
+  }
+
+  .infocontainer .lowpadding:last-child {
+    padding: 1rem 1rem 1rem 1rem;
   }
 }
 
@@ -396,6 +398,55 @@ header .desktopmenu li {
 .specialmarginpadding {
   margin: 1rem 0;
   padding: 0 2rem;
+}
+
+
+.coursescontainer {
+  padding: 2rem 1.5rem;
+  background-color: #EAEBEC;
+  border: 0;
+}
+
+.desktop.courselist {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  padding: 0 2rem;
+}
+
+.mobile.courselist {
+  display: none;
+}
+
+@media only screen and (max-width: 540px) {
+  .coursescontainer {
+    background-color: #FFFFFF;
+    border-top: 1px solid #E9EAEA;
+    border-bottom: 1px solid #E9EAEA;
+    padding: 2rem 1rem;
+  }
+
+  .desktop.courselist {
+    display: none;
+  }
+
+  .mobile.courselist {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    margin-top: 1rem;
+    /* margin-bottom: 1.75rem;
+    padding: 0 1rem; */
+    width: 100%;
+  }
+
+  .mobile.courselist h3 {
+    margin: 0.25rem 0;
+    padding: 1rem 1rem 1.5rem 1rem;
+    background-color: #D8D8D8;
+    /* width: 100%; */
+  }
 }
 
 .sectionitem {
