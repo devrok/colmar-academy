@@ -3,7 +3,6 @@ html {
   font-size: 16px;
   font-family: Helvetica, sans-serif;
   /* font-family: 'Roboto', sans-serif; */
-  /* background-color: lightblue; */
   color: #4A4A4A;
 }
 
@@ -29,12 +28,9 @@ h3 {
 .container {
   max-width: 960px;
   margin: 0 auto;
-  /* background-color: lightseagreen */
 }
-
 @media only screen and (max-width: 540px) {
   .container {
-    /* max-width: 100%; */
     width: 100%;
     margin: 0;
   }
@@ -50,11 +46,6 @@ h3 {
   align-items: center;
 }
 
-.flexstart{
-  display: flex;
-  align-items: flex-start;
-}
-
 .justifycenter {
   justify-content: center;
 }
@@ -66,11 +57,6 @@ h3 {
 .column {
   flex-direction: column;
 }
-
-/* class to make a text bold */
-/* .bold {
-  font-weight: 700;
-} */
 
 /* class used to make a black text a little bit more gray */
 .light {
@@ -85,14 +71,10 @@ h3 {
   background-color: #D8D8D8;
 }
 
-.backgroundlightest {
-  background-color: #EAEBEC;
-}
-
 /* represents a section */
 .sectioncontainer {
   max-width: 100%;
-  /* background-color: #D8D8D8; */
+  display: flex;
 }
 
 .sectioncontainer.highpadding {
@@ -122,16 +104,10 @@ h3 {
 .sectionitemleft {
   overflow: hidden;
   margin: 2rem 1.5rem;
-  /* padding-right: 1.5rem; */
-  /* max-width: 60%; */
 }
 
-/* represents the right column within a section with maximum width of 40% */
+/* represents the right column within a section */
 .sectionitemright {
-  /* margin-left: 1.5rem; */
-  /* width: 40%; */
-  /* just to make area visible during development */
-  /* background-color: lightseagreen; */
 }
 
 .width65 {
@@ -168,15 +144,11 @@ h3 {
   }
 }
 
-
 .textcontainersmall{
   padding: 1rem;
   display: flex;
   flex-direction: column;
   height: 100%;
-
-}
-.textcontainersmall h3 {
 
 }
 
@@ -206,7 +178,6 @@ header img {
 header a {
   text-decoration: none;
   color: #4A4A4A;
-  /* color: black; */
 }
 
 header .desktopmenu li {
@@ -297,7 +268,6 @@ header .desktopmenu li {
   .textcontainerbanner a {
     background-color: #9B9B9B;
   }
-
 }
 
 .sectionitemleft img {
@@ -317,12 +287,11 @@ header .desktopmenu li {
 
 /* -- INFO SECTION -- */
 .infocontainer {
-
 }
 
 .textcontainerinfo {
-
 }
+
 .textcontainerinfo h2 {
   margin-top: 2rem;
 }
@@ -393,16 +362,14 @@ header .desktopmenu li {
   }
 }
 
-
 /* -- COURSES SECTION -- */
 .specialmarginpadding {
   margin: 1rem 0;
   padding: 0 2rem;
 }
 
-
 .coursescontainer {
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 0 1.5rem;
   background-color: #EAEBEC;
   border: 0;
 }
@@ -419,12 +386,18 @@ header .desktopmenu li {
   display: none;
 }
 
+.mobile.courselist h3 {
+  margin: 0.25rem 0;
+  padding: 1rem 1rem 1.5rem 1rem;
+  background-color: #D8D8D8;
+}
+
 @media only screen and (max-width: 540px) {
   .coursescontainer {
     background-color: #FFFFFF;
     border-top: 1px solid #E9EAEA;
     border-bottom: 1px solid #E9EAEA;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 2rem 1rem;
   }
 
   .desktop.courselist {
@@ -433,19 +406,9 @@ header .desktopmenu li {
 
   .mobile.courselist {
     display: flex;
-    /* align-items: center; */
     flex-direction: column;
     margin-top: 1rem;
-    /* margin-bottom: 1.75rem;
-    padding: 0 1rem; */
     width: 100%;
-  }
-
-  .mobile.courselist h3 {
-    margin: 0.25rem 0;
-    padding: 1rem 1rem 1.5rem 1rem;
-    background-color: #D8D8D8;
-    /* width: 100%; */
   }
 }
 
@@ -465,12 +428,8 @@ header .desktopmenu li {
 
 
 /* -- THESIS SECTION -- */
-.containerthesispadding {
-  padding: 2rem 0;
-}
-
 .thesiscontainer {
-  padding: 2rem 0;
+  padding-top: 2rem;
 }
 
 .textcontainerthesis {
@@ -488,7 +447,6 @@ header .desktopmenu li {
   font-size: 0.89rem;
 }
 
-
 @media only screen and (max-width: 540px) {
   .thesiscontainer .sectionitemright{
     display: none;
@@ -496,7 +454,7 @@ header .desktopmenu li {
 
   .thesiscontainer {
     padding-top: 2rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.5;
   }
 
   .thesiscontainer .sectionitemleft {
