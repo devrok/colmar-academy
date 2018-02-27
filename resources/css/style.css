@@ -473,11 +473,8 @@ header .desktopmenu li {
   padding: 2rem 0;
 }
 
-@media only screen and (max-width: 540px) {
-  .thesiscontainer .sectionitemright{
-    display: none;
-  }
-
+.textcontainerthesis {
+  display: block;
 }
 
 .textcontainerthesis h3 {
@@ -491,6 +488,33 @@ header .desktopmenu li {
   font-size: 0.89rem;
 }
 
+
+@media only screen and (max-width: 540px) {
+  .thesiscontainer .sectionitemright{
+    display: none;
+  }
+
+  .thesiscontainer {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .thesiscontainer .sectionitemleft {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  .thesiscontainer .width60 {
+    max-width: 100%;
+  }
+
+  .textcontainerthesis {
+    display: none;
+  }
+}
+
 /* -- FOOTER SECTION -- */
 footer {
   height: 4rem;
@@ -499,11 +523,6 @@ footer {
 
 footer span {
   font-size: 0.75rem;
-}
-@media only screen and (max-width: 540px) {
-  footer span {
-    padding: 1rem 0;
-  }
 }
 
 footer li {
@@ -521,8 +540,16 @@ footer .sectioncontainer {
 }
 
 @media only screen and (max-width: 540px) {
+  footer {
+      border-top: 0;
+  }
+
   footer .sectioncontainer {
     padding: 1rem 1.5rem 0 1.5rem;
+  }
+
+  footer span {
+    padding: 1rem 0;
   }
 
   footer .desktop {
