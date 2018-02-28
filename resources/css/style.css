@@ -77,18 +77,8 @@ h3 {
   display: flex;
 }
 
-.sectioncontainer.highpadding {
-  padding: 2rem 1.5rem;
-}
-
-.sectioncontainer.leftpadding {
-  padding-left: 1.5rem;
-}
-
 .sectioncontainer.lowpadding {
-    padding-top: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 0 1rem 1rem;
 }
 
 .itemrightpadding {
@@ -276,15 +266,6 @@ header .desktopmenu li {
   display: block;
 }
 
-.button {
-  color: white;
-  text-decoration: none;
-  background-color: #4A4A4A;
-  padding: 0.5rem 0;
-  width: 100%;
-  text-align: center;
-}
-
 /* -- INFO SECTION -- */
 .infocontainer {
 }
@@ -310,6 +291,7 @@ header .desktopmenu li {
 .infocontainer .sectionitemright {
   padding-top: 1rem;
   padding-bottom: 2rem;
+  /* border-left: 1px solid ##D8D8D8; */
 }
 
 .infocontainer .sectionitemright .sectioncontainer {
@@ -358,7 +340,7 @@ header .desktopmenu li {
   }
 
   .infocontainer .lowpadding:last-child {
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem 1rem;
   }
 }
 
@@ -458,10 +440,7 @@ header .desktopmenu li {
   }
 
   .thesiscontainer .sectionitemleft {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 2rem;
-    margin-bottom: 0;
+    margin: 2rem 0 0 0;
   }
 
   .thesiscontainer .width60 {
@@ -499,7 +478,7 @@ footer .sectioncontainer {
 
 @media only screen and (max-width: 540px) {
   footer {
-      border-top: 0;
+    border-top: 0;
   }
 
   footer .sectioncontainer {
