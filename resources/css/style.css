@@ -40,20 +40,20 @@ h3 {
 .flex {
   display: flex;
 }
-
+/* make an element flex with center aligned items */
 .flexcenter {
   display: flex;
   align-items: center;
 }
-
+/* justify the content of a flex container to center */
 .justifycenter {
   justify-content: center;
 }
-
+/* justify the content of a flex container to space between */
 .justifyspacebetween {
   justify-content: space-between;
 }
-
+/* set a flex container flex-direction to column  */
 .column {
   flex-direction: column;
 }
@@ -82,11 +82,6 @@ h3 {
 }
 
 .itemrightpadding {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-}
-
-.itemrightpadding1 {
   padding: 2rem 0;
 }
 
@@ -187,17 +182,14 @@ header .desktopmenu li {
 }
 
 @media only screen and (max-width: 540px) {
-  .containerlogo {
+  .containerlogo,
+  .desktopmenu {
     display: none;
   }
 
   .containernavigation {
     padding-left: 1.5rem;
     width: 100%;
-  }
-
-  .desktopmenu {
-    display: none;
   }
 
   .mobilemenu {
@@ -430,7 +422,8 @@ header .desktopmenu li {
 }
 
 @media only screen and (max-width: 540px) {
-  .thesiscontainer .sectionitemright{
+  .thesiscontainer .sectionitemright,
+  .textcontainerthesis {
     display: none;
   }
 
@@ -445,10 +438,6 @@ header .desktopmenu li {
 
   .thesiscontainer .width60 {
     max-width: 100%;
-  }
-
-  .textcontainerthesis {
-    display: none;
   }
 }
 
@@ -482,7 +471,7 @@ footer .sectioncontainer {
   }
 
   footer .sectioncontainer {
-    padding: 1rem 1.5rem 0 1.5rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
   }
 
   footer span {
